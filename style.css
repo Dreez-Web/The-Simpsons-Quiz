@@ -1,0 +1,80 @@
+/* Centrado del contenedor principal */
+body {
+  background-color: #4da7db; /* Azul cielo tipo Simpsons */
+  font-family: "Arial", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  margin: 0;
+  padding: 20px;
+}
+
+.box {
+  background-color: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 600px;
+  width: 80%;
+}
+
+/* LA CUADRÍCULA DE IMÁGENES */
+.imagen {
+  display: grid;
+  /* Creamos 3 columnas iguales */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px; /* Espacio entre fotos */
+  margin: 20px 0;
+  justify-items: center;
+}
+
+/* ESTILO DE CADA IMAGEN */
+.img-personaje {
+  width: 100%;
+  max-width: 150px;
+  aspect-ratio: 1 / 1; /* Las hace cuadradas */
+  object-fit: cover; /* Evita que se deformen */
+  border-radius: 12px;
+  border: 4px solid #f1c40f; /* Borde amarillo */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #f9f9f9;
+}
+
+/* Efecto al pasar el mouse */
+.img-personaje:hover {
+  transform: scale(1.05);
+  border-color: #2c3e50; /* Cambia a azul oscuro */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo para los textos */
+.nombrepersonaje {
+  color: #2c3e50;
+  font-size: 1.5rem;
+  margin: 15px 0;
+}
+
+.fechapersonaje {
+  display: block;
+  font-weight: bold;
+  color: #7f8c8d;
+  margin-bottom: 20px;
+}
+
+/* Botón Siguiente (oculto durante el duelo, o para saltar) */
+.btn {
+  background-color: #f1c40f;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background-color: #d4ac0d;
+}
