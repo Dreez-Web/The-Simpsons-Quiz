@@ -2,7 +2,7 @@
 
 ¡Bienvenido a **Simpsons Al-Quiz**! Un juego de agilidad visual desarrollado con JavaScript Vanilla que consume datos en tiempo real de una API REST. El objetivo es identificar al personaje correcto entre 6 opciones generadas dinámicamente.
 
-![Simpsons Quiz Banner](https://cdn.thesimpsonsapi.com/500/character/1.webp) ## 🚀 Características
+![Simpsons Quiz Banner](https://cdn.thesimpsonsapi.com/200/character/1.webp) ## 🚀 Características
 
 - **Consumo de API:** Datos obtenidos dinámicamente de `The Simpsons API`.
 - **Lógica de Duelo:** Sistema que selecciona un objetivo y 5 "impostores" sin repetir personajes.
